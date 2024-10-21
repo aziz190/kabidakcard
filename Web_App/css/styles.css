@@ -1,0 +1,576 @@
+@font-face {
+    font-family: 'GE Dinar One Medium';
+    src: url('../fonts/ge_dinar_one_medium.eot');
+    src: url('../fonts/ge_dinar_one_medium.woff') format('woff'), url('../fonts/ge_dinar_one_medium.ttf') format('truetype'), url('../fonts/ge_dinar_one_medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GE Dinar One Light';
+    src: url('../fonts/ge_dinar_one_light.eot');
+    src: local('☺'), url('../fonts/ge_dinar_one_light.woff') format('woff'), url('../fonts/ge_dinar_one_light.ttf') format('truetype'), url('../fonts/ge_dinar_one_light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GE SS Two Bold';
+    src: url('../fonts/GE SS Two Bold.eot');
+    src: local('☺'), url('../fonts/GE SS Two Bold.woff') format('woff'), url('../fonts/GE SS Two Bold.ttf') format('truetype'), url('../fonts/GE SS Two Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dubai';
+    src: url('../fonts/DubaiW23-Regular.eot');
+    src: local('☺'), url('../fonts/DubaiW23-Regular.woff') format('woff'), url('../fonts/DubaiW23-Regular.ttf') format('truetype'), url('../fonts/DubaiW23-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TestFont';
+    src: url('../fonts/HelveticaNeueLTProCn.otf');
+    src: local('☺'), url('../fonts/HelveticaNeueLTProCn.woff') format('woff'), url('../fonts/DubaiW23-Regular.ttf') format('truetype'), url('../fonts/DubaiW23-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    text-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F3F3F3 url('../images/bg.jpg') no-repeat center 0;
+    background-image: linear-gradient(transparent, transparent), url(../images/bg.jpg);
+    background-size: 100%;
+    background-size: cover;
+    font: 13px 'GE Dinar One Regular';
+    -webkit-overflow-scrolling: touch;
+}
+
+img,
+iframe {
+    border: none
+}
+
+.w960 {
+    width: 960px;
+    margin: 0 auto
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+}
+
+#flat_form h2 {
+    background: linear-gradient(30deg, rgba(0, 79, 122, 0.67), rgba(0, 171, 159, 0.46)), rgb(0, 171, 159);
+    line-height: 1.9;
+}
+
+
+/* =================================================================== */
+
+
+/***Start Header***/
+
+.blue_head {
+    /*width: 100%; height:146px;  margin: 0 auto; background:#205578 url('../images/bg1_2.png') -85px -12px;*/
+}
+
+.headeritems {}
+
+.header {
+    z-index: 7;
+    width: 100%;
+    height: 140px;
+}
+
+.logo {
+    float: right;
+    background: url('../images/logo.png') no-repeat center center;
+    background-image: linear-gradient(transparent, transparent), url('../images/logo.png');
+    display: block;
+    height: 79px;
+    width: 206px;
+    margin: 40px 20px 0 0;
+}
+
+
+/***Footer Section***/
+
+.footer {
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.footer>.footerStyle {
+    background: #1aaea2;
+    color: #f3f3f3;
+    font: 12px 'GE Dinar One Light';
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 11px 0 15px 0;
+    line-height: 18px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bold;
+}
+
+.footer>.footerStyle>.right {
+    float: right
+}
+
+.footer>.footerStyle>.right>.rights {}
+
+.footer>.footerStyle>.left {
+    float: left
+}
+
+.footer>.footerStyle>.left>ul {
+    margin: 6px 0 0 0;
+    padding: 0;
+    list-style: none
+}
+
+.footer>.footerStyle>.left>ul>li {
+    float: left;
+    width: 90px;
+    text-align: center
+}
+
+.footer>.footerStyle>.left>ul>li>a {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 22px;
+    display: inline-block
+}
+
+.footer>.footerBrowsers {}
+
+.footer>.footerBrowsers>.right {
+    /* background: url('../images/browsers.png') no-repeat right 0px; */
+    float: right;
+    width: 545px;
+    height: 43px;
+    font: 11px 'GE Dinar One Light';
+    padding: 10px 139px 0 0;
+    line-height: 17px;
+    color: #B0B0B0;
+    margin-right: 15%;
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        margin: 0 0 30px 0;
+        top: 0;
+        left: 0;
+        /*height: auto;*/
+    }
+
+    .backtotop {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    body {
+        background-size: cover;
+        /* background-attachment: fixed; */
+    }
+
+    .w960 {
+        width: 96%;
+        margin: 0 2%;
+        box-sizing: border-box;
+        padding-bottom: 0;
+    }
+
+    .headeritems {
+        position: relative;
+        top: 0;
+        left: 0;
+        min-height: 196px;
+        margin-bottom: 15px;
+    }
+
+    .footer {
+        margin-bottom: 25px;
+        padding-bottom: 0;
+    }
+
+    .footer>.footerStyle {
+        width: 100%
+    }
+
+    .footer>.footerBrowsers>.right {
+        min-width: 400px;
+        height: auto;
+        min-height: 53px;
+        box-sizing: border-box;
+        background-position: right center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        margin: 0
+    }
+
+    .headeritems {
+        min-height: 183px;
+        margin-bottom: 15px;
+    }
+
+    .logo {
+        margin: 34px auto 0;
+    }
+
+    .footer>.footerStyle {
+        padding: 8px
+    }
+
+    .footer>.footerStyle>.right {
+        float: none;
+        font-size: 11px
+    }
+
+    .footer>.footerStyle>.right>.rights,
+    .footer>.footerStyle>.right>.fLinks {
+        text-align: center;
+        margin-bottom: 5px
+    }
+
+    .footer>.footerStyle>.left {
+        float: none;
+        text-align: center;
+        margin-top: 5px
+    }
+
+    .footer>.footerStyle>.left>ul {
+        display: inline-block
+    }
+
+    .footer>.footerBrowsers>.right {
+        width: 70%;
+        box-sizing: border-box;
+        height: auto;
+        max-width: 100%;
+        background-position: center top;
+        padding: 63px 0 0 0;
+        text-align: center;
+        margin: 0 15%;
+        min-width: initial;
+    }
+}
+
+@media screen and (max-width: 626px) {
+    .logo {
+        margin: 34px auto 0;
+        float: right;
+        background-size: contain;
+    }
+}
+
+.backtotop {
+    background: url('../images/gototop.png') no-repeat;
+    background-image: linear-gradient(transparent, transparent), url(../images/gototop.svg);
+    width: 51px;
+    height: 51px;
+    position: fixed;
+    cursor: pointer;
+    margin: 0;
+    z-index: 100;
+    bottom: 135px;
+    left: 50px;
+    display: none;
+}
+
+a {
+    color: #16a085;
+    text-decoration: none;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+
+h2,
+.h2 {
+    font-size: 53px;
+}
+
+small,
+.small {
+    font-size: 83%;
+    line-height: 2.067;
+}
+
+ul,
+ol {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    color: #fff;
+    background: rgba(0, 79, 122, 0.67);
+    background: linear-gradient(30deg, rgba(0, 79, 122, 0.67), rgba(0, 171, 159, 0.46)), rgb(0, 171, 159);
+}
+
+.btn-lg,
+.btn-group-lg>.btn {
+    padding: 10px 19px;
+    font-size: 17px;
+    line-height: 1.471;
+    border-radius: 6px;
+}
+
+.form-control::-moz-placeholder,
+.select2-search input[type="text"]::-moz-placeholder {
+    color: #b2bcc5;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder,
+.select2-search input[type="text"]:-ms-input-placeholder {
+    color: #b2bcc5;
+}
+
+.form-control::-webkit-input-placeholder,
+.select2-search input[type="text"]::-webkit-input-placeholder {
+    color: #b2bcc5;
+}
+
+.form-control,
+.select2-search input[type="text"] {
+    /*height: 42px;*/
+    padding: 8px 12px;
+    font-size: 15px;
+    line-height: 1.467;
+    color: #34495e;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    box-shadow: none;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+.input-lg,
+.form-group-lg .form-control,
+.form-group-lg .select2-search input[type="text"] {
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 17px;
+    line-height: 1.235;
+    border-radius: 6px;
+}
+
+select.input-lg,
+select.form-group-lg .form-control,
+select.form-group-lg .select2-search input[type="text"] {
+    height: 45px;
+    line-height: 45px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    width: 30% !important;
+    text-align: center !important;
+}
+
+.responsiv_image {
+    image-rendering: -webkit-optimize-contrast;
+    width: 50%;
+    height: auto;
+    /* margin-right: 25%; */
+}
+
+.form-control,
+.select2-search input[type="text"] {
+    /*height: 42px;*/
+    padding: 8px 12px;
+    font-size: 15px;
+    line-height: 1.467;
+    color: #34495e;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    box-shadow: none;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+#flat_form {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    -webkit-font-smoothing: antialiased;
+    /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+#flat_form h2 {
+    text-align: right;
+    font-family: 'GE SS Two Bold';
+    font-weight: 400;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-right: 26px;
+    padding-left: 26px;
+    padding-bottom: 5px;
+}
+
+#flat_form fieldset {
+    background: #E8E8E8;
+    font-family: 'GE Dinar One Medium';
+    text-align: right;
+    font-size: 16px;
+    border-radius: 15px;
+    padding-top: 14px;
+    padding-right: 26px;
+    padding-left: 26px;
+    padding-bottom: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+    #flat_form input {
+        /* border-radius: 3px; */
+        /* border: 2px solid #fff; */
+        /* text-align: right; */
+        /* font-family: 'GE Dinar One Medium'; */
+        /* font-size: 15px; */
+        /* margin-right: 2%; */
+        /* margin-bottom: 14px; */
+        /* margin-top: 10px; */
+        /* background: #fff; */
+        /* color: #777; */
+        /* padding: 4px 10px; */
+        /* width: 40%; */
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .responsiv_image {
+        image-rendering: -webkit-optimize-contrast;
+        width: 372px;
+        height: auto;
+        /* margin-right: 15px !important; */
+    }
+
+    .btn-custom {
+        width: 45% !important;
+    }
+
+    #flat_form fieldset {
+        background: #E8E8E8;
+        font-family: 'GE Dinar One Medium';
+        text-align: right;
+        font-size: 16px;
+        border-radius: 15px;
+        padding-top: 14px;
+        padding-right: 10px;
+        padding-left: 26px;
+        padding-bottom: 14px;
+    }
+}
+
+
+/* English */
+
+
+/* English fonts */
+
+@font-face {
+    font-family: 'Neue Helvetica LTW20 Bold';
+    src: url('../fonts/HelveticaNeueLT\ W20\ 75\ Bold.otf');
+    src: local('☺'), url('../fonts/HelveticaNeueLT\ W20\ 75\ Bold.otf') format('.otf'), url('../fonts/HelveticaNeueLT\ W20\ 75\ Bold.otf') format('truetype'), url('../fonts/HelveticaNeueLT\ W20\ 75\ Bold.otf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTProCn';
+    src: url('../fonts/HelveticaNeueLTProCn.otf');
+    src: local('☺'), url('../fonts/HelveticaNeueLTProCn.otf') format('.otf'), url('../fonts/HelveticaNeueLT\ W20\ 75\ Bold.otf') format('truetype'), url('../fonts/HelveticaNeueLT\ W20\ 75\ Bold.otf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#flat_formEn h2 {
+    text-align: left;
+    font-family: 'Neue Helvetica LTW20 Bold';
+    font-weight: 400;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-right: 26px;
+    padding-left: 26px;
+    padding-bottom: 5px;
+}
+
+#flat_formEn h2 {
+    background: rgba(0, 79, 122, 0.67);
+    background: linear-gradient(30deg, rgba(0, 79, 122, 0.67), rgba(0, 171, 159, 0.46)), rgb(0, 171, 159);
+    line-height: 1.9;
+}
+
+#lanEn {
+    float: left;
+    margin-top: 5px;
+    width: 32px;
+    /* height: 32px; */
+    border: 1px solid black;
+}
+
+#lanEn:hover {
+    cursor: pointer;
+}
+
+#lanAr {
+    float: right;
+    width: 32px;
+    /* height: 32px; */
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+#lanAr:hover {
+    cursor: pointer;
+}
+
+#flat_formEn {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    -webkit-font-smoothing: antialiased;
+    /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+#flat_formEn fieldset {
+    background: #E8E8E8;
+    font-family: 'HelveticaNeueLTProCn';
+    text-align: left;
+    font-size: 16px;
+    border-radius: 15px;
+    padding-top: 14px;
+    padding-right: 26px;
+    padding-left: 26px;
+    padding-bottom: 14px;
+}
+
+.shadow{
+    box-shadow: 0 0 5px lightgray;
+}
